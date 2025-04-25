@@ -2,9 +2,9 @@
     <div class="row">
       <div class="card-container">
         <VideoCard
-          v-for="video in videos"
-          :key="video.id"
-          :video="video"
+          v-for="movie in movies"
+          :key="movie.id"
+          :movie="movie"
         />
       </div>
     </div>
@@ -12,7 +12,7 @@
   
   <script setup>
   import VideoCard from './VideoCard.vue';
-  defineProps(['videos']);
+  defineProps(['movies']);
   </script>
   
   <style scoped>

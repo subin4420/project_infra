@@ -1,8 +1,8 @@
 <template>
-    <div class="hero" :style="`background-image: url(${video.thumbnail})`">
+    <div class="hero" :style="`background-image: url(${movie.thumbnail})`">
       <div class="overlay">
-        <h1 class="title">{{ video.title }}</h1>
-        <p class="description">{{ video.description }}</p>
+        <h1 class="title">{{ movie.title }}</h1>
+        <p class="description">{{ movie.description }}</p>
         <div class="buttons">
           <button class="play">▶ 재생</button>
           <button class="info">ℹ 상세정보</button>
@@ -13,7 +13,7 @@
   
   <script setup>
   const props = defineProps({
-    video: {
+    movie: {
       type: Object,
       required: true
     }

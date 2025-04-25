@@ -1,16 +1,17 @@
 <template>
   <div class="home">
-    <HeroBanner :video="featuredVideo" />
+    <HeroBanner :movie="featuredVideo" />
+    <!-- <HeroBanner :movie="movies[0]" /> -->
 
 
     <h2 class="section-title">🔥 인기 콘텐츠</h2>
-    <HorizontalRow :videos="popularVideos" />
+    <HorizontalRow :movies="popularVideos" />
 
     <h2 class="section-title">🎞 최신 업로드</h2>
-    <HorizontalRow :videos="newVideos" />
+    <HorizontalRow :movies="newVideos" />
 
     <h2 class="section-title">🧠 추천 영상</h2>
-    <HorizontalRow :videos="recommendedVideos" />
+    <HorizontalRow :movies="recommendedVideos" />
   </div>
 </template>
 
@@ -18,7 +19,15 @@
 import HorizontalRow from '../components/HorizontalRow.vue';
 import HeroBanner from '../components/HeroBanner.vue';
 import thumb1 from '../assets/cdn/test2.png';
+import { onMounted, ref } from 'vue';
+import { getAllMovies } from '@/api/movie';
 
+const movies = ref([]);
+
+onMounted(async () => {
+  const res = await getAllMovies(); // ✅ API 모듈로 요청
+  movies.value = res.data;
+});
 
 // 실제로는 API에서 받아오는 데이터입니다
 const popularVideos = [

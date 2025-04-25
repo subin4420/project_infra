@@ -1,15 +1,32 @@
+// src/router/index.js
+
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import DetailView from '../views/DetailView.vue';
 import SearchView from '../views/SearchView.vue';
 
 const routes = [
-  { path: '/', component: HomeView },
-  { path: '/video/:id', component: DetailView },
-  { path: '/search', component: SearchView },
+  {
+    path: '/',
+    name: 'home',
+    component: HomeView,
+  },
+  {
+    path: '/movie/:id',
+    name: 'detail',
+    component: DetailView,
+    props: true, // id 값을 props로 전달
+  },
+  {
+    path: '/search',
+    name: 'search',
+    component: SearchView,
+  },
 ];
 
-export default createRouter({
+const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
+export default router;

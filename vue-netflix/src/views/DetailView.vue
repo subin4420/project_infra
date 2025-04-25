@@ -1,7 +1,7 @@
 <template>
     <div>
       <h2>영상 상세 페이지</h2>
-      <VideoPlayer :videoId="$route.params.id" />
+      <VideoPlayer :movieId="$route.params.id" />
     </div>
   </template>
   

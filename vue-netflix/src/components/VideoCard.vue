@@ -1,17 +1,17 @@
 <template>
     <div class="card" @click="goToDetail">
-      <img :src="video.thumbnail" :alt="video.title" />
-      <p>{{ video.title }}</p>
+      <img :src="movie.thumbnail" :alt="movie.title" />
+      <p>{{ movie.title }}</p>
     </div>
   </template>
   
   <script setup>
   import { useRouter } from 'vue-router';
-  const props = defineProps(['video']);
+  const props = defineProps(['movie']);
   const router = useRouter();
   
   const goToDetail = () => {
-    router.push(`/video/${props.video.id}`);
+    router.push(`/movie/${props.movie.id}`);
   };
   </script>
   
