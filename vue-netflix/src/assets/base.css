@@ -1,0 +1,11 @@
+body {
+    background-color: #111;
+    color: white;
+    margin: 0;
+    font-family: 'Pretendard', sans-serif;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  

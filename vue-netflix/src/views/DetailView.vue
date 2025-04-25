@@ -1,0 +1,11 @@
+<template>
+    <div>
+      <h2>영상 상세 페이지</h2>
+      <VideoPlayer :videoId="$route.params.id" />
+    </div>
+  </template>
+  
+  <script setup>
+  import VideoPlayer from '../components/VideoPlayer.vue';
+  </script>
+  
