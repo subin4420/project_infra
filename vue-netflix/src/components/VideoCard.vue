@@ -10,6 +10,7 @@
   const props = defineProps(['movie']);
   const router = useRouter();
   
+
   const goToDetail = () => {
     router.push(`/movie/${props.movie.id}`);
   };

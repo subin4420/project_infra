@@ -31,7 +31,7 @@ onMounted(async () => {
 
 // 실제로는 API에서 받아오는 데이터입니다
 const popularVideos = [
-  { id: '101', title: '오징어 게임', thumbnail: '../assets/cdn/thumbs/101.jpg' },
+  { id: '101', title: '오징어 게임', thumbnail: '../assets/cdn/thumbs/101/test1.jpg' },
   { id: '102', title: '더 글로리', thumbnail: '../assets/cdn/thumbs/102.jpg' },
   { id: '103', title: '킹덤', thumbnail: '../assets/cdn/thumbs/103.jpg' },
 ];
