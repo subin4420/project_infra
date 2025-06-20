@@ -1,4 +1,4 @@
-```markdown
+markdown
 # 🎬 Miniflix – 온프레미스 기반 미디어 스트리밍 플랫폼
 
 > 하이퍼바이저 환경에서 고가용성 미디어 스트리밍 서비스를 직접 설계 및 구현한 실무형 인프라 프로젝트
@@ -115,4 +115,4 @@ CDN 서버   스트리밍 서버     Apache(WAS) ───→ MariaDB(Internal_Z
 - [📂 GitHub Repository](https://github.com/subin4420/project_infra/tree/main)
 - [📽️ 시연 영상 (YouTube)](https://www.youtube.com/watch?v=_oIZswled7s)
 - [🖥️ 발표자료 (Canva)](https://sulgasaeng.my.canva.site/miniflix)
-```
+
