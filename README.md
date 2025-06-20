@@ -29,9 +29,7 @@ markdown
 
 ## 🛠 인프라 아키텍처
 
-> 🔽 아래 이미지는 실제 구성 아키텍처 예시입니다. (GitHub에 이미지 업로드 후 링크 교체)
-
-![infra_architecture](https://user-images.githubusercontent.com/your-image-path/image.png)
+![infra_architecture](infra_diagram.png)
 
 - **하드웨어 구성**: 2대의 물리 PC (DMZ용 / 내부망용)  
 - **네트워크 구조**:  
