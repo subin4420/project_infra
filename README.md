@@ -3,7 +3,8 @@ markdown
 
 > 하이퍼바이저 환경에서 고가용성 미디어 스트리밍 서비스를 직접 설계 및 구현한 실무형 인프라 프로젝트
 
----
+
+
 
 ## 📌 프로젝트 개요
 
@@ -15,14 +16,16 @@ markdown
   - 프론트(Vue.js) / 백엔드(Spring Boot) 풀스택 개발  
 - **목표**: 하이퍼바이저 기반 온프레미스 환경에서 고가용성 구조의 스트리밍 플랫폼 직접 구축 및 운영  
 
----
+
+
 
 ## 🧠 기획 배경
 
 - 클라우드 및 컨테이너 환경의 필요성을 체감하기 위해 온프레미스 환경에서 스트리밍 서비스를 직접 구축  
 - 실무 환경에서 필요한 **네트워크 구성, 보안 정책, DMZ/내부망 분리, 고가용성 인프라 구성**을 실제로 경험해보기 위함  
 
----
+
+
 
 ## 🛠 인프라 아키텍처
 
@@ -36,6 +39,7 @@ markdown
   - DMZ(192.168.1.0/24): HAProxy, NGINX, Apache, CDN, 스트리밍 서버  
   - 내부망(192.168.0.0/24): DB, 파일 서버, 트랜스코딩 서버, 분석 서버  
 
+
 ```
 [사용자 요청]
     ↓
@@ -47,7 +51,8 @@ markdown
 CDN 서버   스트리밍 서버     Apache(WAS) ───→ MariaDB(Internal_Zone)
 ```
 
----
+
+
 
 ## 🔧 사용 기술 및 도구
 
@@ -67,7 +72,8 @@ CDN 서버   스트리밍 서버     Apache(WAS) ───→ MariaDB(Internal_Z
 | 프론트엔드 | Vue.js |
 | 백엔드 | Spring Boot |
 
----
+
+
 
 ## 💻 담당 업무 상세
 
@@ -87,7 +93,8 @@ CDN 서버   스트리밍 서버     Apache(WAS) ───→ MariaDB(Internal_Z
 - NGINX-Apache 프록시 연동을 통한 E2E 통신 구성
 - 각 서버 간 포트 및 통신 상태 점검, 빌드 배포 수동 진행
 
----
+
+
 
 ## 🎯 프로젝트 결과
 
@@ -99,7 +106,8 @@ CDN 서버   스트리밍 서버     Apache(WAS) ───→ MariaDB(Internal_Z
 🎥 **시연 영상**: [YouTube 링크 바로가기](https://www.youtube.com/watch?v=_oIZswled7s)  
 📄 **PPT 발표자료**: [Canva 링크 바로가기](https://sulgasaeng.my.canva.site/miniflix)
 
----
+
+
 
 ## 📚 회고 및 성장
 
@@ -108,11 +116,11 @@ CDN 서버   스트리밍 서버     Apache(WAS) ───→ MariaDB(Internal_Z
 - **GitOps 기반 CI/CD, K8s 환경**으로 확장 시 어떤 개선이 가능한지 실무적 관점에서 비교할 수 있는 안목 확보
 - **운영 자동화의 필요성 인식**: 반복적인 배포/테스트 과정의 비효율성을 경험 → 차기 프로젝트에서는 자동화 도입 예정
 
----
+
+
 
 ## 📎 관련 링크
 
-- [📂 GitHub Repository](https://github.com/subin4420/project_infra/tree/main)
 - [📽️ 시연 영상 (YouTube)](https://www.youtube.com/watch?v=_oIZswled7s)
 - [🖥️ 발표자료 (Canva)](https://sulgasaeng.my.canva.site/miniflix)
 
